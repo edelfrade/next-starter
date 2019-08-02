@@ -1,0 +1,6 @@
+const routes = (module.exports = require('next-routes')());
+
+routes
+  .add({ name: 'home', pattern: '/', page: '/' })
+  .add({ name: 'privacy-policy', pattern: '/privacy-policy', page: '/privacy-policy' })
+
