@@ -1,4 +1,4 @@
-const NgProgress = `
+
 #nprogress {
     pointer-events: none;
     .bar {
@@ -22,6 +22,4 @@ const NgProgress = `
       -ms-transform: rotate(3deg) translate(0px, -4px);
       transform: rotate(3deg) translate(0px, -4px);
     }
-  }`;
-
-export default NgProgress;
+  }

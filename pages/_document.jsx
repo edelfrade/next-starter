@@ -2,9 +2,7 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import { TypographyStyle } from 'react-typography';
 import { getLang } from '../services/utils';
-import { ThemeFontStyles } from '../components/styles/Theme';
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage, asPath }) {
@@ -37,7 +35,6 @@ export default class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
           />
-          <TypographyStyle typography={ThemeFontStyles} />
           {this.props.styleTags}
         </Head>
         <body>
