@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Theme, { GlobalStyle } from '../components/styles/Theme';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import { TypographyStyle } from 'react-typography';
+import Typography from '../styles/Typography';
+import Theme from '../styles/Theme';
+import "../styles/index.scss";
+// import Header from '../components/Header';
+// import Footer from '../components/Footer';
 
 const Main = styled.div``;
 
@@ -18,10 +21,11 @@ MainLayout.propTypes = {
 
 const MainLayoutExport = props => (
   <Theme>
-    <Header />
-    <GlobalStyle />
+    {/* <Header /> */}
+    {/* <GlobalStyle /> */}
+    <TypographyStyle typography={Typography} />
     <MainLayout {...props} />
-    <Footer />
+    {/* <Footer /> */}
   </Theme>
 );
 

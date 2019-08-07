@@ -1,24 +1,15 @@
 /* eslint-disable no-param-reassign */
 require('dotenv').config();
-const withCSS = require('@zeit/next-css');
+const withSass = require('@zeit/next-sass')
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 
 module.exports = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     // console.log('in development');
   }
-  return withCSS({
+  return withSass({
     distDir: 'build',
     assetPrefix: process.env.IMAGE_PREFIX,
-    cssLoaderOptions: {
-      url: false,
-    },
-    onDemandEntries: {
-      // period (in ms) where the server will keep pages in the buffer
-      maxInactiveAge: 25 * 1000,
-      // number of pages that should be kept simultaneously without being disposed
-      pagesBufferLength: 2,
-    },
     webpack: (config) => {
       const originalEntry = config.entry;
       config.entry = async () => {
