@@ -1,8 +1,8 @@
 module.exports =  {
-    "presets": [
+    presets: [
         "next/babel"
     ],
-    "plugins": [
+    plugins: [
         [ "styled-components", { ssr: true, displayName: true, preprocess: false} ]
     ]
 }
