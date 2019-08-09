@@ -4,9 +4,9 @@ import { Colors } from "./Theme";
 
 const ThemeFontStyles = new Typography({
     title: "Open",
-    baseFontSize: "15px",
+    baseFontSize: "13px",
     baseLineHeight: 1.25,
-    scaleRatio: 5 / 3.5,
+    scaleRatio: 5 / 2,
     headerFontFamily: ["Open Sans", "sans-serif"],
     bodyFontFamily: ["Open Sans", "sans-serif"],
     headerColor: Colors.copy,

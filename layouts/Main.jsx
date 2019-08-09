@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { TypographyStyle } from 'react-typography';
 import Typography from '../styles/Typography';
 import Theme from '../styles/Theme';
 import "../styles/index.scss";
-// import Header from '../components/Header';
+import Header from '../components/Header/';
+import Intro from '../components/Intro/';
 // import Footer from '../components/Footer';
 
-const Main = styled.div``;
+const Main = styled.div`
+  margin-left: 80px;
+  background-color: #ebebeb;
+  min-height: calc(100vh - 80px);
+  margin-top: 80px;
+`;
 
 const MainLayout = ({ children, ...rest }) => <Main {...rest}>{children}</Main>;
 
@@ -19,14 +25,19 @@ MainLayout.propTypes = {
 };
 
 
-const MainLayoutExport = props => (
+const MainLayoutExport = props => {
+  const [introActive, toggleIntro] = useState(true);
+
+  
+return(
   <Theme>
-    {/* <Header /> */}
+    {introActive && <Intro onClick={() => toggleIntro(false)} />}
+    {!introActive && <Header onClick={() => toggleIntro(true)} />}
     {/* <GlobalStyle /> */}
     <TypographyStyle typography={Typography} />
     <MainLayout {...props} />
     {/* <Footer /> */}
   </Theme>
-);
+)};
 
 export default MainLayoutExport;

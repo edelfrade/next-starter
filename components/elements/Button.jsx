@@ -5,17 +5,15 @@ import Link from 'next/link'
 
 const BaseButton = styled.button`
   max-width: 300px;
-  width: 100%;
+  width: 150px;
   display: block;
   white-space: nowrap;
   text-decoration: none;
   font-weight: 900;
   text-align: center;
   border: medium none;
-  border-radius: 5px;
-  padding: 15px 40px;
-  font-size: 17px;
-  line-height: 16px;
+  border-radius: 25px;
+  padding: 10px;
   cursor: pointer;
   margin: 0 auto;
   transition: all ease 0.3s;
