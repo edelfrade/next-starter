@@ -37,9 +37,17 @@ const Nav = styled.nav`
     align-items: center;
     margin: 0;
     li {
-      margin: 0 25px;
+      margin: 0 30px;
+      font-family: "HelveticaNeue";
+      font-size: 20px;
+      color: #707070;
+      cursor: pointer;
+      &:last-child {
+        margin: 0 115px 0 30px;
+      }
       &.active {
-        font-weight: bold;
+        font-weight: 700;
+        color: #000;
       }
     }
   }
