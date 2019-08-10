@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Poppins";
+  font-display: fallback;
+  src: url("/static/fonts/poppins_medium.eot");
+  src: url("/static/fonts/poppins_medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/poppins_medium.woff2") format("woff2"),
+    url("/static/fonts/poppins_medium.woff") format("woff"),
+    url("/static/fonts/poppins_medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
