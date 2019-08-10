@@ -13,7 +13,8 @@ const Colors = {
   pinterest: "#BD081C",
   instagram: "#262626",
   links: "#640088",
-  copy: "#000000"
+  copy: "#000000",
+  primary: "#5AC8FA"
 };
 
 const Breakpoints = {
@@ -32,7 +33,7 @@ const Variables = {
 const ThemeWrapper = styled.div`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
-  -webkit-tap-highlight-color: rgba(254, 196, 9, 0.5) !important;
+  -webkit-tap-highlight-color: rgba(90, 200, 250, 0.5) !important;
 `;
 
 const Theme = ({ children }) => <ThemeWrapper>{children}</ThemeWrapper>;
