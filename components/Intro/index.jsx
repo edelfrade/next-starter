@@ -1,11 +1,11 @@
 import { Container, TopBar, Content } from "./styles";
 
-const Intro = ({ onClick, className }) => (
-  <Container {...{ className, onClick }}>
-    <TopBar>
+const Intro = ({ onClick, active }) => (
+  <Container className={active ? "active" : ""} {...{ onClick }}>
+    <TopBar className={active ? "active" : ""}>
       <img src="/static/images/logo.png" alt="" />
     </TopBar>
-    <Content>
+    <Content className={active ? "active" : ""}>
       <div className="apple">
         <img src="/static/images/taller-logo.png" alt="" />
         <p>New Products Coming This Summer</p>

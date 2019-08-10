@@ -8,7 +8,14 @@ const Container = styled.div`
   top: 0;
   left: 0;
   background: #fff;
-  z-index: 2;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity ease 0.4s, z-index ease 0.4s 0.4s;
+  &.active {
+    opacity: 1;
+    z-index: 2;
+    transition: opacity ease 0.4s, z-index ease 0s 0s;
+  }
 `;
 
 const TopBar = styled.div`
@@ -19,6 +26,11 @@ const TopBar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  top: -${Variables.gap - 10}px;
+  transition: top ease 0.5s 0.4s;
+  &.active {
+    top: 0;
+  }
   img {
     height: 60%;
     width: auto;
@@ -40,6 +52,13 @@ const Content = styled.div`
     rgba(255, 255, 255, 1) 60%,
     rgba(255, 255, 255, 1) 100%
   );
+  min-height: 100vh;
+  margin: -${Variables.gap}px 0 0 0;
+  transition: all ease 0.5s 0.4s;
+  &.active {
+    min-height: calc(100vh - ${Variables.gap}px);
+    margin: 7px ${Variables.gap}px 0;
+  }
   .apple {
     position: relative;
     height: 361px;

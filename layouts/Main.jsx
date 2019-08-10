@@ -28,8 +28,11 @@ const MainLayoutExport = props => {
 
   return (
     <Theme>
-      {introActive && <Intro onClick={() => toggleIntro(false)} />}
-      {!introActive && <Header onClick={() => toggleIntro(true)} />}
+      <Intro active={introActive} onClick={() => toggleIntro(false)} />
+      <Header
+        className={introActive ? "" : "active"}
+        onClick={() => toggleIntro(true)}
+      />
       {/* <GlobalStyle /> */}
       <TypographyStyle typography={Typography} />
       <MainLayout {...props} />
