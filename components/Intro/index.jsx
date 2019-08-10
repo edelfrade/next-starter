@@ -1,4 +1,5 @@
 import { Container, TopBar, Content } from "./styles";
+import Apple from "../Apple/";
 
 const Intro = ({ onClick, active }) => (
   <Container className={active ? "active" : ""} {...{ onClick }}>
@@ -6,10 +7,10 @@ const Intro = ({ onClick, active }) => (
       <img src="/static/images/logo.png" alt="" />
     </TopBar>
     <Content className={active ? "active" : ""}>
-      <div className="apple">
-        <img src="/static/images/taller-logo.png" alt="" />
-        <p>New Products Coming This Summer</p>
-      </div>
+      <Apple
+        img="/static/images/taller-logo.png"
+        copy="New Products Coming This Summer"
+      />
       <div className="year">
         <h2>2019</h2>
       </div>

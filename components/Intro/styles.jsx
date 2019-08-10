@@ -13,7 +13,7 @@ const Container = styled.div`
   transition: opacity ease 0.4s, z-index ease 0.4s 0.4s;
   &.active {
     opacity: 1;
-    z-index: 2;
+    z-index: 3;
     transition: opacity ease 0.4s, z-index ease 0s 0s;
   }
 `;
@@ -58,28 +58,6 @@ const Content = styled.div`
   &.active {
     min-height: calc(100vh - ${Variables.gap}px);
     margin: 7px ${Variables.gap}px 0;
-  }
-  .apple {
-    position: relative;
-    height: 361px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 200px;
-    img {
-      position: absolute;
-      height: 100%;
-      width: auto;
-      top: 0;
-    }
-    p {
-      font-size: 25px;
-      font-family: "Poppins";
-      font-weight: 500;
-      z-index: 2;
-      margin-top: 25%;
-    }
   }
   .year {
     width: 100%;
