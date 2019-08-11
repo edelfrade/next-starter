@@ -93,8 +93,9 @@ const Content = styled.div`
     transition: all ease 0.5s 0.5s;
     h2 {
       font-size: 70px;
-      font-family: "Poppins";
+      font-family: Helvetica;
       font-weight: 500;
+      letter-spacing: 14px;
     }
   }
 `;

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "dev": "NODE_ENV=development node server.js",
+    "win": "SET NODE_ENV=development&& node server.js",
     "build": "NODE_ENV=$NODE_ENV PORT=$PORT next build",
     "start": "NODE_ENV=staging node server.js -p $PORT",
     "heroku-postbuild": "NODE_ENV=staging next build"
@@ -30,6 +31,7 @@
     "nprogress": "^0.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
+    "react-countup": "^4.2.1",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
     "react-scrollable-anchor": "^0.6.1",

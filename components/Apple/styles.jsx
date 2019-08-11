@@ -10,6 +10,8 @@ const Container = styled.div`
   top: 200px;
   width: 100%;
   @media all and (max-width: 1700px) {
+    height: 300px;
+    top: 100px;
   }
   img {
     position: absolute;
