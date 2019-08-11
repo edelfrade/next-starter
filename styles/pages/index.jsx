@@ -72,12 +72,20 @@ export const Page = styled.div`
     padding: 100px 76px;
     width: 50%;
     position: relative;
+    @media all and (max-width: 1700px) {
+      padding: 50px 30px;
+    }
     img {
       position: absolute;
       right: 40px;
       top: 107px;
       z-index: 1;
       width: 154px;
+      @media all and (max-width: 1700px) {
+        width: 120px;
+        right: 20px;
+        top: 80px;
+      }
     }
     h2,
     h3,
@@ -98,6 +106,10 @@ export const Page = styled.div`
       font-weight: 700;
       font-family: "Poppins";
       margin: 0 0 40px 0;
+      @media all and (max-width: 1700px) {
+        font-size: 85px;
+        line-height: 95px;
+      }
     }
     p {
       font-size: 25px;
@@ -153,6 +165,9 @@ export const Page = styled.div`
       position: relative;
       width: 500px;
       height: 100vh;
+      @media all and (max-width: 1700px) {
+        width: 400px;
+      }
       img {
         position: absolute;
         left: 0;
@@ -161,6 +176,9 @@ export const Page = styled.div`
         opacity: 0;
         transition: all ease 0.7s;
         height: 730px;
+        @media all and (max-width: 1700px) {
+          height: 600px;
+        }
         &.active {
           transform: translateX(0);
           opacity: 1;
