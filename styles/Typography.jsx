@@ -6,7 +6,7 @@ const ThemeFontStyles = new Typography({
   baseFontSize: "13px",
   baseLineHeight: 1.25,
   scaleRatio: 5 / 2,
-  headerFontFamily: ["HelveticaNeue", "sans-serif"],
+  headerFontFamily: ["Poppins", "sans-serif"],
   bodyFontFamily: ["Poppins", "sans-serif"],
   headerColor: Colors.copy,
   bodyColor: Colors.copy,
