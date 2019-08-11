@@ -46,19 +46,35 @@ const Page = styled.div`
       rgba(242, 242, 242, 1) 0%,
       rgba(255, 255, 255, 1) 100%
     );
-    padding: 80px 90px;
+    padding: 100px 76px;
     width: 50%;
+    position: relative;
+    img {
+      position: absolute;
+      right: 40px;
+      top: 107px;
+      z-index: 1;
+      width: 154px;
+    }
+    h2,
+    h3,
+    p {
+      position: relative;
+      z-index: 2;
+    }
     h3 {
       font-size: 32px;
       line-height: 48px;
       color: #ff3b30;
       font-weight: bold;
+      margin: 0 0 20px 18px;
     }
     h2 {
       font-size: 100px;
       line-height: 110px;
       font-weight: 700;
       font-family: "Poppins";
+      margin: 0 0 40px 0;
     }
     p {
       font-size: 25px;
@@ -72,6 +88,7 @@ const Page = styled.div`
     align-items: flex-end;
     justify-content: space-between;
     width: 50%;
+    padding: 50px 0 0 0;
     .pricing {
       h4 {
         color: #cccccc;
@@ -87,10 +104,15 @@ const Page = styled.div`
     }
     .options {
       position: relative;
-      max-width: 300px;
+      width: 250px;
       .variants {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32.5px;
         img {
           opacity: 0.2;
+          margin: 0;
           transition: opacity ease 0.5s;
           &.active {
             opacity: 1;
@@ -129,7 +151,6 @@ const Homepage = () => {
   const [option, setOption] = useState(0);
   const okChange = e => {
     setOption(parseInt(e.target.value));
-    // console.log(e.target.value);
   };
   return (
     <Home>
@@ -167,6 +188,7 @@ const Homepage = () => {
               The future is here. Join the iPhone Upgrade Program to get the
               latest iPhone - NOW
             </p>
+            <img src="/static/images/taller-logo-grey.png" alt="" />
           </div>
           <div className="phones">
             <div className="pricing">
