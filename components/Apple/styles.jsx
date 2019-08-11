@@ -9,6 +9,8 @@ const Container = styled.div`
   text-align: center;
   top: 200px;
   width: 100%;
+  @media all and (max-width: 1700px) {
+  }
   img {
     position: absolute;
     height: 100%;

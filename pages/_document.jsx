@@ -1,13 +1,15 @@
 /* eslint-disable react/no-danger */
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
-import { getLang } from '../services/utils';
+import React from "react";
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet } from "styled-components";
+import { getLang } from "../services/utils";
 
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage, asPath }) {
     const sheet = new ServerStyleSheet();
-    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
+    const page = renderPage(App => props =>
+      sheet.collectStyles(<App {...props} />)
+    );
     const styleTags = sheet.getStyleElement();
     return { ...page, styleTags, lang: getLang(asPath) };
   }
@@ -21,7 +23,11 @@ export default class MyDocument extends Document {
           <meta httpEquiv="x-dns-prefetch-control" content="on" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
-          <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+          <link
+            rel="shortcut icon"
+            href="/static/favicon.ico"
+            type="image/x-icon"
+          />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="" />
           <meta name="twitter:site" content="" />

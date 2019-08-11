@@ -88,10 +88,11 @@ const Content = styled.div`
   .year {
     width: 100%;
     text-align: center;
+    margin: 50px 0 0;
     opacity: 0;
     transition: all ease 0.5s 0.5s;
     h2 {
-      font-size: 80px;
+      font-size: 70px;
       font-family: "Poppins";
       font-weight: 500;
     }

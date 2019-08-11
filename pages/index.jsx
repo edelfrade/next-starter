@@ -54,6 +54,9 @@ const PageIntro = styled.div`
     transition: all ease 0.5s 0.2s;
     a {
       margin: 0 20px;
+      img {
+        width: 50px;
+      }
     }
   }
 `;
