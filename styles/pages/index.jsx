@@ -62,6 +62,7 @@ export const Page = styled.div`
   background-color: #fff;
   position: relative;
   overflow: hidden;
+  padding-bottom: 30px;
   .heading {
     width: 100%;
     background: linear-gradient(
