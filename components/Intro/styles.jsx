@@ -32,7 +32,7 @@ const TopBar = styled.div`
     top: 0;
   }
   img {
-    height: 60%;
+    height: 45%;
     width: auto;
     margin: 0;
   }
@@ -68,6 +68,9 @@ const Content = styled.div`
         opacity: 1;
       }
     }
+    .year {
+      opacity: 1;
+    }
   }
   .intro-apple {
     img {
@@ -85,6 +88,8 @@ const Content = styled.div`
   .year {
     width: 100%;
     text-align: center;
+    opacity: 0;
+    transition: all ease 0.5s 0.5s;
     h2 {
       font-size: 80px;
       font-family: "Poppins";

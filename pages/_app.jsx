@@ -1,14 +1,14 @@
-import App, { Container } from 'next/app';
-import React from 'react';
-import { Provider } from 'react-redux';
-import withReduxStore from '../redux/with-redux-store';
-import Events from '../components/system/Events';
-import Layout from '../layouts/Main';
-import { getLang } from '../services/utils';
+import App, { Container } from "next/app";
+import React from "react";
+import { Provider } from "react-redux";
+import withReduxStore from "../redux/with-redux-store";
+import Events from "../components/system/Events";
+import Layout from "../layouts/Main";
+import { getLang } from "../services/utils";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
-    let pageProps = { };
+    let pageProps = {};
 
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
@@ -18,9 +18,7 @@ class MyApp extends App {
   }
 
   render() {
-    const {
-      Component, pageProps, reduxStore, path, lang,
-    } = this.props;
+    const { Component, pageProps, reduxStore, path, lang } = this.props;
     return (
       <Provider store={reduxStore}>
         <Container>

@@ -7,7 +7,6 @@ import Theme, { Variables } from "../styles/Theme";
 import "../styles/index.scss";
 import Header from "../components/Header/";
 import Intro from "../components/Intro/";
-// import Footer from '../components/Footer';
 
 const Main = styled.div`
   margin-left: ${Variables.gap}px;
@@ -16,7 +15,9 @@ const Main = styled.div`
   margin-top: ${Variables.gap}px;
 `;
 
-const MainLayout = ({ children, ...rest }) => <Main {...rest}>{children}</Main>;
+const MainLayout = ({ children, ...rest }) => (
+  <Main {...rest}>{React.cloneElement(children, { ...rest })}</Main>
+);
 
 MainLayout.defaultProps = {};
 MainLayout.propTypes = {
@@ -26,17 +27,24 @@ MainLayout.propTypes = {
 const MainLayoutExport = props => {
   const [introActive, toggleIntro] = useState(true);
 
+  const onToggleIntro = value => {
+    if (value) {
+      try {
+        window.scrollTo(0, 0);
+      } catch (e) {}
+    }
+    toggleIntro(value);
+  };
+
   return (
     <Theme>
-      <Intro active={introActive} onClick={() => toggleIntro(false)} />
+      <Intro active={introActive} onClick={() => onToggleIntro(false)} />
       <Header
         className={introActive ? "" : "active"}
-        onClick={() => toggleIntro(true)}
+        onClick={() => onToggleIntro(true)}
       />
-      {/* <GlobalStyle /> */}
       <TypographyStyle typography={Typography} />
-      <MainLayout {...props} />
-      {/* <Footer /> */}
+      <MainLayout {...props} {...{ introActive }} />
     </Theme>
   );
 };

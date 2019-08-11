@@ -19,15 +19,39 @@ const PageIntro = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  &.active {
+    .page-apple {
+      p {
+        margin-top: 110px;
+        opacity: 1;
+      }
+    }
+    .see-all {
+      margin-top: 100px;
+    }
+    .devices {
+      transform: scale(1);
+    }
+  }
+  .page-apple {
+    p {
+      margin-top: -100px;
+      opacity: 0;
+      transition: all ease 0.5s 0.2s;
+    }
+  }
   .see-all {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
     font-size: 20px;
+    transition: all ease 0.5s 0.2s;
   }
   .devices {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(1.5);
+    transition: all ease 0.5s 0.2s;
     a {
       margin: 0 20px;
     }
@@ -35,7 +59,7 @@ const PageIntro = styled.div`
 `;
 
 const Page = styled.div`
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   background-color: #fff;
   position: relative;
   overflow: hidden;
@@ -134,12 +158,12 @@ const Page = styled.div`
         position: absolute;
         left: 0;
         top: 0;
-        transform: translateX(200%);
+        transform: translateX(180%);
         opacity: 0;
-        transition: all ease 0.5s;
+        transition: all ease 0.7s;
+        height: 730px;
         &.active {
           transform: translateX(0);
-          transition: all ease 0.5s;
           opacity: 1;
         }
       }
@@ -147,15 +171,16 @@ const Page = styled.div`
   }
 `;
 
-const Homepage = () => {
+const Homepage = ({ introActive }) => {
   const [option, setOption] = useState(0);
   const okChange = e => {
     setOption(parseInt(e.target.value));
   };
   return (
     <Home>
-      <PageIntro>
+      <PageIntro className={introActive ? "" : "active"}>
         <Apple
+          className="page-apple"
           img="/static/images/taller-logo-grey.png"
           copy="Welcome to Apple"
           bold
