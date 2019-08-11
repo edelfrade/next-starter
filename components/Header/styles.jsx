@@ -12,6 +12,9 @@ const Container = styled.div`
   top: 0;
   left: 0;
   background-color: #fff;
+  &.active {
+    z-index: 5;
+  }
 `;
 
 const Logo = styled.div`
