@@ -1,81 +1,104 @@
 @font-face {
   font-family: "Poppins";
-  src: url("/static/fonts/Poppins-Regular.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/Poppins-Regular.eot");
   src: url("/static/fonts/Poppins-Regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/static/fonts/Poppins-Regular.otf") format("opentype"),
-    /* Open Type Font */ url("/static/fonts/Poppins-Regular.svg") format("svg"),
-    /* Legacy iOS */ url("/static/fonts/Poppins-Regular.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("/static/fonts/Poppins-Regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("/static/fonts/Poppins-Regular.woff2")
-      format("woff2"); /* Modern Browsers */
+    url("/static/fonts/Poppins-Regular.otf") format("opentype"),
+    url("/static/fonts/Poppins-Regular.svg") format("svg"),
+    url("/static/fonts/Poppins-Regular.ttf") format("truetype"),
+    url("/static/fonts/Poppins-Regular.woff") format("woff"),
+    url("/static/fonts/Poppins-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("/static/fonts/poppins_medium.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/poppins_medium.eot");
   src: url("/static/fonts/poppins_medium.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/static/fonts/poppins_medium.otf") format("opentype"),
-    /* Open Type Font */ url("/static/fonts/poppins_medium.svg") format("svg"),
-    /* Legacy iOS */ url("/static/fonts/poppins_medium.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("/static/fonts/poppins_medium.woff")
-      format("woff"),
-    /* Modern Browsers */ url("/static/fonts/poppins_medium.woff2")
-      format("woff2"); /* Modern Browsers */
+    url("/static/fonts/poppins_medium.otf") format("opentype"),
+    url("/static/fonts/poppins_medium.svg") format("svg"),
+    url("/static/fonts/poppins_medium.ttf") format("truetype"),
+    url("/static/fonts/poppins_medium.woff") format("woff"),
+    url("/static/fonts/poppins_medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
+  font-family: "Poppins";
+  src: url("/static/fonts/Poppins-SemiBold.eot");
+  src: url("/static/fonts/Poppins-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/Poppins-SemiBold.otf") format("opentype"),
+    url("/static/fonts/Poppins-SemiBold.svg") format("svg"),
+    url("/static/fonts/Poppins-SemiBold.ttf") format("truetype"),
+    url("/static/fonts/Poppins-SemiBold.woff") format("woff"),
+    url("/static/fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/static/fonts/Poppins-Bold.eot");
+  src: url("/static/fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/static/fonts/Poppins-Bold.otf") format("opentype"),
+    url("/static/fonts/Poppins-Bold.svg") format("svg"),
+    url("/static/fonts/Poppins-Bold.ttf") format("truetype"),
+    url("/static/fonts/Poppins-Bold.woff") format("woff"),
+    url("/static/fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("/static/fonts/Helvetica-Bold.eot");
+  src: url("/static/fonts/Helvetica-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/static/fonts/Helvetica-Bold.otf") format("opentype"),
+    url("/static/fonts/Helvetica-Bold.svg") format("svg"),
+    url("/static/fonts/Helvetica-Bold.ttf") format("truetype"),
+    url("/static/fonts/Helvetica-Bold.woff") format("woff"),
+    url("/static/fonts/Helvetica-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
   font-family: "HelveticaNeue";
-  src: url("/static/fonts/HelveticaNeue.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/HelveticaNeue.eot");
   src: url("/static/fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("/static/fonts/HelveticaNeue.otf") format("opentype"),
-    /* Open Type Font */ url("/static/fonts/HelveticaNeue.svg") format("svg"),
-    /* Legacy iOS */ url("/static/fonts/HelveticaNeue.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("/static/fonts/HelveticaNeue.woff")
-      format("woff"),
-    /* Modern Browsers */ url("/static/fonts/HelveticaNeue.woff2")
-      format("woff2"); /* Modern Browsers */
+    url("/static/fonts/HelveticaNeue.otf") format("opentype"),
+    url("/static/fonts/HelveticaNeue.svg") format("svg"),
+    url("/static/fonts/HelveticaNeue.ttf") format("truetype"),
+    url("/static/fonts/HelveticaNeue.woff") format("woff"),
+    url("/static/fonts/HelveticaNeue.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("/static/fonts/HelveticaNeue-Bold.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/HelveticaNeue-Bold.eot");
   src: url("/static/fonts/HelveticaNeue-Bold.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/static/fonts/HelveticaNeue-Bold.otf") format("opentype"),
-    /* Open Type Font */ url("/static/fonts/HelveticaNeue-Bold.svg")
-      format("svg"),
-    /* Legacy iOS */ url("/static/fonts/HelveticaNeue-Bold.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("/static/fonts/HelveticaNeue-Bold.woff")
-      format("woff"),
-    /* Modern Browsers */ url("/static/fonts/HelveticaNeue-Bold.woff2")
-      format("woff2"); /* Modern Browsers */
+    url("/static/fonts/HelveticaNeue-Bold.otf") format("opentype"),
+    url("/static/fonts/HelveticaNeue-Bold.svg") format("svg"),
+    url("/static/fonts/HelveticaNeue-Bold.ttf") format("truetype"),
+    url("/static/fonts/HelveticaNeue-Bold.woff") format("woff"),
+    url("/static/fonts/HelveticaNeue-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("/static/fonts/HelveticaNeue-Medium.eot"); /* IE9 Compat Modes */
+  src: url("/static/fonts/HelveticaNeue-Medium.eot");
   src: url("/static/fonts/HelveticaNeue-Medium.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("/static/fonts/HelveticaNeue-Medium.otf")
-      format("opentype"),
-    /* Open Type Font */ url("/static/fonts/HelveticaNeue-Medium.svg")
-      format("svg"),
-    /* Legacy iOS */ url("/static/fonts/HelveticaNeue-Medium.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("/static/fonts/HelveticaNeue-Medium.woff")
-      format("woff"),
-    /* Modern Browsers */ url("/static/fonts/HelveticaNeue-Medium.woff2")
-      format("woff2"); /* Modern Browsers */
+    url("/static/fonts/HelveticaNeue-Medium.otf") format("opentype"),
+    url("/static/fonts/HelveticaNeue-Medium.svg") format("svg"),
+    url("/static/fonts/HelveticaNeue-Medium.ttf") format("truetype"),
+    url("/static/fonts/HelveticaNeue-Medium.woff") format("woff"),
+    url("/static/fonts/HelveticaNeue-Medium.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
