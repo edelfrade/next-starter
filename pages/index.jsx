@@ -85,6 +85,17 @@ const Homepage = ({ introActive }) => {
               />
             </div>
           </div>
+          <div className="vertical-devices">
+            <a href="#phones">
+              <img src="/static/images/phone.png" alt="Phone" />
+            </a>
+            <a href="#phones">
+              <img src="/static/images/mac.png" alt="Laptop" />
+            </a>
+            <a href="#phones">
+              <img src="/static/images/watch.png" alt="Watch" />
+            </a>
+          </div>
         </Page>
       </ScrollableAnchor>
     </Home>

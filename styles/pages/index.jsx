@@ -186,4 +186,12 @@ export const Page = styled.div`
       }
     }
   }
+  .vertical-devices {
+    position: absolute;
+    right: 40px;
+    top: calc(50% - 200px / 2);
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
 `;
