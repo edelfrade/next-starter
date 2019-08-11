@@ -15,6 +15,8 @@ export const PageIntro = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  padding-right: 100px;
+
   &.active {
     .page-apple {
       p {
