@@ -58,6 +58,29 @@ const Content = styled.div`
   &.active {
     min-height: calc(100vh - ${Variables.gap}px);
     margin: 7px ${Variables.gap}px 0;
+    .intro-apple {
+      img {
+        height: 100%;
+        opacity: 1;
+      }
+      p {
+        margin-top: 110px;
+        opacity: 1;
+      }
+    }
+  }
+  .intro-apple {
+    img {
+      height: 50%;
+      opacity: 0;
+      transform-origin: top center;
+      transition: all ease 0.5s 0.5s;
+    }
+    p {
+      margin-top: 400px;
+      opacity: 0;
+      transition: all ease 0.5s 0.5s;
+    }
   }
   .year {
     width: 100%;

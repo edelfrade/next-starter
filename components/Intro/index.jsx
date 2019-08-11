@@ -8,6 +8,7 @@ const Intro = ({ onClick, active }) => (
     </TopBar>
     <Content className={active ? "active" : ""}>
       <Apple
+        className="intro-apple"
         img="/static/images/taller-logo.png"
         copy="New Products Coming This Summer"
       />
